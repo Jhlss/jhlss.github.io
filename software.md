@@ -12,7 +12,7 @@ The Lorenz attractor, animated with [Plots.jl](https://docs.juliaplots.org/dev/u
 
 ~~~
 <p align="center">
-  <img src="/assets/lorenz-attractor.gif" width="800">
+  <img src="/assets/lorenz-attractor.gif" width="1000">
 </p>
 ~~~
 
