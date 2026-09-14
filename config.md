@@ -15,8 +15,10 @@ mintoclevel = 2
 # Base files such as LICENSE.md and README.md are ignored by default.
 ignore = ["node_modules/"]
 
-# RSS (the website_{title, descr, url} must be defined to get RSS)
-generate_rss = true
+# RSS is off: it only includes pages that define `@def rss = "..."`, and this
+# site has no blog/news pages yet. Set to true and add `rss` to a page's
+# front matter to start publishing a feed.
+generate_rss = false
 website_title = "João Henrique Lírio da Silva"
 website_descr = "PhD in Mathematics (UFRJ) — researcher in ergodic theory, chaotic dynamical systems and rigorous computational approaches."
 website_url   = "https://jhlss.github.io/"
