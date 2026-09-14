@@ -6,6 +6,16 @@
 </p>
 ~~~
 
+### Julia in action
+
+The Lorenz attractor, animated with [Plots.jl](https://docs.juliaplots.org/dev/user_gallery/misc/gr_lorenz_attractor/):
+
+~~~
+<p align="center">
+  <img src="/assets/lorenz-attractor.gif" width="500">
+</p>
+~~~
+
 ### Tools
 
 - [The Julia Programming Language](https://julialang.org/)
