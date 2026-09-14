@@ -3,7 +3,7 @@
 ================================================================== */
 
 nav {
-  width: 64%;
+  width: 100%;
   display: inline-block;
 }
 
@@ -11,6 +11,7 @@ nav ul {
   padding-left: 0;
   margin-top: 0;
   margin-bottom: 0;
+  white-space: nowrap;
 }
 
 nav li {
@@ -23,7 +24,6 @@ nav li a {
   font-size: 18px;
   font-weight: bold;
   display: inline-block;
-  float: center;
   padding-top: 10px;
   padding-right: 2px;
   padding-left: 2px;
@@ -35,25 +35,9 @@ nav li a {
 }
 
 header {
-  text-align: right;
+  text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
-  display: flex;
-  align-items: center;
-}
-
-header .blog-name {
-  width: 35%;
-  display: inline-block;
-  text-align: left;
-  font-size: 18px;
-  font-family: "Lucida Console", Monaco, monospace;
-  padding-top: 10px;
-}
-
-header .blog-name a {
-  color: #a6a2a0;
-  text-decoration: none;
 }
 
 header li a:hover {
@@ -89,41 +73,20 @@ header li a:hover {
 }
 
 /*
-medium display: nav goes under name
+narrow display: below this width there isn't enough room for the six
+menu items on one line, so collapse them behind a burger menu instead.
 */
-@media (max-width: 760px) {
-  header { display: block; }
-
-  header .blog-name {
-    display: block;
-    width: 100%;
-    padding-bottom: 10px;
-  }
-
-  nav {
-    width: 100%;
-  }
-}
-
-/*
-narrow display: collapse the header (don't show the menu items)
-instead, display a burger menu.
-*/
-@media (max-width: 500px) {
+@media (max-width: 900px) {
   header {
     height: 35px;
     display: flex;
     align-items: center;
-  }
-
-  header .blog-name {
-    display: inline-block;
-    width: 70%;
+    justify-content: flex-end;
   }
 
   nav {
     display: inline-block;
-    width: 27%;
+    width: auto;
   }
 
   nav ul,
